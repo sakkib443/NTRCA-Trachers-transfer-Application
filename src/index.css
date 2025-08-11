@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Simple utility variants to mimic subtle UI look */
+.card { @apply bg-white border rounded-2xl shadow-sm; }
+.btn { @apply inline-flex items-center justify-center rounded-xl px-3 py-2 text-sm font-medium; }
+.btn-outline { @apply border bg-white hover:bg-slate-50; }
+.btn-primary { @apply bg-slate-900 text-white hover:bg-slate-800; }
+.badge { @apply inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-xs; }
+.input { @apply w-full rounded-xl border px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-slate-300; }
+.label { @apply text-sm font-medium text-slate-700; }
+.textarea { @apply w-full rounded-xl border px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-slate-300; }
+.switch { @apply relative inline-flex h-5 w-9 items-center rounded-full border bg-white; }
+.switch-dot { @apply h-4 w-4 rounded-full bg-slate-400 transition; }
+.tab-btn { @apply px-3 py-1.5 text-sm rounded-xl border; }
+.tab-btn-active { @apply bg-slate-900 text-white border-slate-900; }
+.progress { @apply h-2 w-full rounded-full bg-slate-200; }
+.progress-bar { @apply h-full rounded-full bg-slate-900; }
+.table { @apply w-full border; }
+.table th { @apply text-left text-xs font-semibold uppercase tracking-wider text-slate-500 border-b px-3 py-2; }
+.table td { @apply border-b px-3 py-2 text-sm; }
